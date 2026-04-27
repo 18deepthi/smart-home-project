@@ -9,7 +9,7 @@ import time
 
 # ---------------- EMAIL CONFIG ----------------
 SENDER_EMAIL = "venkatasaideepthi3@gmail.com"
-APP_PASSWORD = "rjpklturebrmwnyc"
+APP_PASSWORD = ""
 RECEIVER_EMAIL = "receiver_email@gmail.com"
 
 # ---------------- LOAD FACE MODEL ----------------
