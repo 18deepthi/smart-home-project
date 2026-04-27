@@ -1,21 +1,35 @@
 import streamlit as st
 
-st.title("Smart Home Intrusion Detection System")
+st.set_page_config(page_title="Smart Home Security", layout="wide")
 
-st.write("AI + IoT Based Security Project")
+st.title("🏠 Smart Home Intrusion Detection System")
 
-st.subheader("Features")
+st.subheader("AI + IoT Based Security Monitoring")
+
 st.write("""
-- Human Detection
-- Unknown Person Alert
-- Email Notification
-- Image Capture
-- CSV Logging
+This system monitors camera feed in real time and detects human presence.
+If an unknown person is detected:
+- Image is captured
+- Timestamp added
+- Email alert sent
+- Log stored
 """)
 
-st.subheader("Execution")
-st.write("Main project runs through main.py locally.")
+st.header("✅ Features")
 
-st.code("python main.py")
+col1, col2 = st.columns(2)
+
+with col1:
+    st.write("✔ Human Detection")
+    st.write("✔ Unknown Person Alert")
+    st.write("✔ Image Capture")
+
+with col2:
+    st.write("✔ Email Notification")
+    st.write("✔ CSV Logging")
+    st.write("✔ Real-time Monitoring")
+
+st.header("⚙️ Execution Command")
+st.code("python smart_intrusion_demo.py")
 
 st.success("Project Successfully Hosted")
